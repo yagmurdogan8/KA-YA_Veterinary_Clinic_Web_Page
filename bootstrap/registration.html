@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+	<link rel="shortcut icon" href="logo2.jpg">
+	<script src="js/main.js"></script>
+
+	<link rel="stylesheet" type = "text/css" href = "css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+	<title> Ka & Ya Veterinary Clinic - Loving & Caring - Register </title>
+
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script>
+
+	</script>
+
+	<style>
+		body {
+			background-image: url("background4.jpg");
+		}
+
+	</style>
+
+</head>
+<body>
+
+<br><br>
+
+<div class="container; wrapper">
+	<div class="row">
+		<div class="col-xl-12">
+			<header>
+			<nav class="navbar">
+			<a class="navbar-brand" href ="index.html"><img src="logo2.jpg"/></a>
+
+			<b><span style="font-size: x-large; "><a  class="text-danger" href = index.html> Home Page | </a></span></b>
+			<b><span style="font-size: x-large; "><a class="text-danger" href = blog.html > Blog | </a></span></b>
+			<b><span style="font-size: x-large; "><a  class="text-danger" href = services.html > Our Services | </a></span></b>
+			<b><span style="font-size: x-large; "><a class="text-danger" href = team.html > Our Team | </a></span></b>
+			<b><span style="font-size: x-large; "><a class="text-danger" href = gallery.html> Gallery | </a></span></b>
+			<b><span style="font-size: x-large; "><a class="text-danger" href = contactme.html > Contact Us | </a></span></b>
+			<b><span style="font-size: xx-large; "><a class="text-dark" href = registration.html target="_blank"> Register </a></span></b>
+    		    &nbsp&nbsp&nbsp&nbsp
+        		<form method = GET action = "http://www.google.com/search">
+        		    <label>
+        	        <input type = text name = q size = 24 maxlength=255 placeholder = "Search">
+        		    </label>
+            		<input type=hidden name=hl value="en">
+            		<button type=submit class="btn btn-outline-danger my-2 my-sm-0" name= search> Search </button> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</form>
+			</nav>
+			</header>
+		</div>
+	</div>
+</div>
+<br><br>
+<div class="container">
+	<div class="row">
+		<div class="col-2"></div>
+		<div style="text-align: center; color: white; background-color: #d9534f" class="col-8">
+			<br><br>
+			<b>REGISTRATION</b>
+			<br><br>
+		</div>
+		<div class="col-2"></div>
+
+		<div class="col-2"></div>
+		<div style="text-align: center; color: white; background-color: #d9534f" class="col-8">
+			<form method="post" name="form1">
+				<div style="text-align: center"><label for="Name" class="swipe_left"> Name (Middle Name) Surname: </label>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<input type="text" name="name" id="name" placeholder="Name Surname" onkeypress="return nameValidation(event)" required>
+
+				</div>
+			</form>
+			<br>
+		</div>
+		<div class="col-2"></div>
+
+		<div class="col-2"></div>
+		<div style="text-align: center; color: white; background-color: #d9534f" class="col-8">
+			<form method="post" name="form2">
+				<div style="text-align: center"><label for="Password" class="swipe_left"> Password: </label>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" placeholder="ex: Mypassword1/" required onchange="validPassword(this)"><br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<input class="btn btn-outline-light my-2 my-sm-0" type="submit" value="Check validation">
+				</div></form>
+			<br>
+		</div>
+		<div class="col-2"></div>
+
+		<div class="col-2"></div>
+		<div class="col-8" style="background-color: #d9534f; text-align: center; color: white">
+			<label for="telnum">Phone Number: </label>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<input type="tel" ID="telnum" name="telnum" pattern="[0-9]{11}" min="00000000000" max="99999999999"
+				   placeholder="12345678900" onkeypress="return numberValidation(event)" required>
+		<br>
+		</div>
+		<div class="col-2"></div>
+
+		<div class="col-2"></div>
+		<div style="text-align: center; color: white; background-color: #d9534f" class="col-8">
+			<br>
+			<form method="post" onsubmit="return validEmail(this)">
+				<div style="text-align: center"><label for="email" class="swipe_left"> E-mail: </label>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<input type="email" name="email" id="email" placeholder = "example@xyz.com" class = "swipe_right" onkeyup="form_control()" required><br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<input class="btn btn-outline-light my-2 my-sm-0" type="submit" value="Check validation">
+				</div></form>
+			<br>
+		</div>
+		<div class="row">
+			<div class="col-12"><br></div>
+		</div>
+		<div class="col-2"></div>
+
+		<div class="col-2"></div>
+		<div style="text-align: center; color: white; background-color: #d9534f" class="col-8">
+			<label for="birthday"> Birthday: </label>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<input type="date" id="birthday" value="date" name="birthday" min="1938-11-10" max="2001-12-12" required>
+			<br>
+		</div>
+		<div class="col-2"></div>
+
+		<div class="col-2"></div>
+		<div style="text-align: center; color: white; background-color: #d9534f" class="col-8">
+			<br>
+			<label for="department">Department:</label>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<select id="department" name="department" form="department">
+				<option value="Surgery">Surgery</option>
+				<option value="Diagnosis">Diagnosis</option>
+				<option value="Treatment">Treatment</option>
+				<option value="Medicine">Medicine</option>
+			</select>
+			<br>
+		</div>
+		<div class="col-2"></div>
+
+		<div class="col-2"></div>
+		<div style="text-align: center; color: white; background-color: #d9534f" class="col-8">
+			<br>
+			<form method="post" id="radio">
+				Gender: </label>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+				<input type="radio" id="male" name="gender" value="male">
+				<label for="male">Male</label>
+				<input type="radio" id="female" name="gender" value="female">
+				<label for="female">Female</label>
+			</form>
+			<br>
+		</div>
+		<div class="col-2"></div>
+
+		<div class="col-2"></div>
+		<div style="text-align: center; color: white; background-color: #d9534f" class="col-8">
+			<form method="post" id="textA">
+				<label for="text" class="swipe_left"> About Me & My Pet: </label>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<textarea ID="text" rows="3" cols="23"></textarea>
+			</form>
+			<br>
+		</div>
+		<div class="col-2"></div>
+
+		<div class="col-2"></div>
+		<div style="text-align: center; color: white; background-color: #d9534f" class="col-8">
+			<form method ="post" enctype="multipart/form-data">
+				<label for="image">Select an image:</label>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<input type="file" id="image" name="img" accept="image/*" value="Select an image">
+			</form>
+			<br>
+		</div>
+		<div class="col-2"></div>
+
+		<div class="col-2"></div>
+		<div style="text-align: center; color: white; background-color: #d9534f" class="col-8">
+			<form method="post" id="interests">
+				<label for = "interest1" class = "swipe_left"> Select your interests: </label>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "checkbox" id="interest1" name="interest1" value="">
+				<label for = "interest1"> Autos and Vehicles </label>
+				<br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "checkbox" id="interest2" name="interest2" value="">
+				<label for = "interest2"> Education </label>
+				<br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "checkbox" id="interest3" name="interest3" value="">
+				<label for = "interest3"> Gaming </label>
+				<br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "checkbox" id = "interest4" name = "interest4" value = "">
+				<label for = "interest4"> Politics </label>
+				<br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "checkbox" id = " interest5" name = "interest5" value = "">
+				<label for = " interest5"> Science and Technology </label>
+				<br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "checkbox" id = "interest6" name = "interest6">
+				<label for = "interest6"> Comedy </label>
+				<br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "checkbox" id = "interest7" name = "interest6" value = "">
+				<label for = "interest7"> Playing with my pet </label>
+			</form>
+			<br>
+		</div>
+		<div class="col-2"></div>
+
+		<div class="col-2"></div>
+		<div style="text-align: center; color: white; background-color: #d9534f" class="col-8">
+			<section style="text-align: center">
+				<br><br>
+				<button type="reset" class="btn btn-outline-light my-2 my-sm-0" name = "reset" onclick = "location.href = 'registration.html'" > Reset </button>
+				<br>
+			</section>
+		</div>
+		<div class="col-2"></div>
+
+		<div class="col-2"></div>
+		<div style="text-align: center; color: white; background-color: #d9534f" class="col-8">
+			<section style="text-align: center">
+				<br>
+				<button type="submit" class="btn btn-outline-light my-2 my-sm-0" id="submit" name = "submit" onclick="validation(); validEmail(); nameValidation(); numberValidation(); validPassword(); form_control()"> Send </button>
+			</section> <br><br>
+		</div>
+		<div class="col-2"></div>
+
+	</div>
+</div>
+
+		
+<br><br>
+	<footer>
+
+		<div class="container" style="text-align: center">
+			<div class="row">
+				<div class="col-4"></div>
+				<div class="col-4">
+					<a href = index.html>
+						<img border="0" title="home" src="home.jpg" width="70" height="45"></a>
+				</div>
+				<div class="col-4"></div>
+			</div>
+		</div>
+
+<br>
+		&copy<b><i><u> Copyright 2020 by Yağmur Doğan </u></i></b>
+	</footer>
+<br/><br/><br/>
+
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+</body> 
+</meta>
+</html>

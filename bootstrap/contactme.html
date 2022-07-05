@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="shortcut icon" href="logo2.jpg">
+
+	<link rel="stylesheet" type = "text/css" href = "css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+	<title> Ka & Ya Veterinary Clinic - Loving & Caring - Contact Us </title>
+
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		body {
+			background-image: url("background4.jpg");
+		}
+
+	</style>
+
+</head>
+<body>
+
+<br><br>
+
+<div class="container; wrapper">
+	<div class="row">
+		<div class="col-xl-12">
+			<header>
+
+			<nav class="navbar">
+			<a class="navbar-brand" href ="index.html"><img src="logo2.jpg"/></a>
+
+			<b><span style="font-size: x-large; "><a class="text-danger" href = index.html> Home Page | </a></span></b>
+			<b><span style="font-size: x-large; "><a class="text-danger" href = blog.html > Blog | </a></span></b>
+			<b><span style="font-size: x-large; "><a class="text-danger" href = services.html > Our Services | </a></span></b>
+			<b><span style="font-size: x-large; "><a class="text-danger" href = team.html > Our Team | </a></span></b>
+			<b><span style="font-size: x-large; "><a class="text-danger" href = gallery.html > Gallery | </a></span></b>
+			<b><span style="font-size: xx-large; "><a class="text-dark" href = contactme.html > Contact Us </a></span></b>
+			<b><span style="font-size: x-large; "><a class="text-danger" href = registration.html target="_blank"> | Register </a></span></b>
+				&nbsp&nbsp&nbsp&nbsp
+				<form method = GET action = "http://www.google.com/search">
+					<label>
+					<input type = text name = q size = 24 maxlength=255 placeholder = "Search">
+					</label>
+					<input type=hidden name=hl value="en">
+					<button type=submit class="btn btn-outline-danger my-2 my-sm-0" name= search> Search </button> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</form>
+			</nav>
+			</header>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+	<div class="row">
+		<div class="col-3"></div>
+		<div class="col-6" style="background-color: #d9534f; text-align: center; color: white">
+			<br><br>
+			<b>TO CONTACT WITH US PLEASE FILL ALL THE BLANKS</b>
+			<br><br>
+		</div>
+		<div class="col-3"></div>
+		<br><br>
+
+		<div class="col-3"></div>
+		<div class="col-6" style="background-color: #d9534f; text-align: center; color: white">
+				<form method="post">
+					<label for="name" class="swipe_left"> Name, Surname: </label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<input type="text" name="name" id="name" onkeypress="return nameValidation(event)"><br></form>
+		</div>
+		<div class="col-3"></div>
+
+		<div class="col-3"></div>
+		<div class="col-6" style="background-color: #d9534f; text-align: center; color: white">
+			<label for="E-mail" class="swipe_left">Email: </label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<input type="e-mail" name="email" ID="e-mail" placeholder="example@abc.com" class="swipe_right" onkeyup="validEmail()"> <br>
+		</div>
+		<div class="col-3"></div>
+
+		<div class="col-3"></div>
+		<div class="col-6" style="background-color: #d9534f; text-align: center; color: white">
+			<label for="telnum">Phone Number: </label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<input type="tel" ID="telnum" name="telnum" pattern="[0-9]{11}" placeholder="Max length is 11" onkeypress="return numberValidation(event)">
+		</div>
+		<div class="col-3"></div>
+
+		<div class="col-3"></div>
+		<div class="col-6" style="background-color: #d9534f; text-align: center; color: white">
+			<label for="txt"> Issue: </label>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<textarea ID="txt" rows="3" cols="22" required></textarea>
+		</div>
+		<div class="col-3"></div>
+
+		<div class="col-3"></div>
+		<div class="col-6" style="background-color: #d9534f; text-align: center; color: white">
+			<label for="text">Message: </label>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<textarea ID="text" rows="3" cols="22" required></textarea>
+		</div>
+		<div class="col-3"></div>
+
+		<div class="col-3"></div>
+		<div class="col-6" style="background-color: #d9534f">
+		<section style="text-align: center">
+			<br><br>
+			<button type=submit class="btn btn-outline-light my-2 my-sm-0" onClick = "location.href = 'response.html'" value="Send" > Send </button>
+		</section>
+			<br><br>
+		</div>
+		<div class="col-3"></div>
+
+	</div>
+</div>
+
+<br><br/>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-4"></div>
+				<div class="col-4">
+					<div style = "text-align:center">
+						<a href = https://www.facebook.com/yagmur.dogan.73550>
+							<img border="0" title="facebook" src="facebook.jpg" width="55" height="50"></a>
+
+						<a href = index.html>
+							<img border="0" title="home" src="home.jpg" width="70" height="45"></a>
+
+						<a href = "mailto:taztep@gmail.com">
+							&nbsp&nbsp&nbsp&nbsp<img border="0" title="gmail" src="gmail.jpg" width="40" height="45"></a>
+						<br><br>
+					</div>
+				</div>
+				<div class="col-4"></div>
+
+				<div class="col-4"></div>
+				<div class="col-4" style="text-align: center; background-color: white">
+					<p><b> OR </b></p>
+					<p> If you want to contact me, please click to the address below: </p>
+					<button type=submit class="btn btn-outline-danger my-2 my-sm-0" name = mail onClick = "location.href = 'mailto:taztep@gmail.com'"> taztep@gmail.com </a</button>
+				</div>
+				<div class="col-4"></div>
+		</div>
+		</div>
+
+<br/><br/><br/>
+		&copy<b><i><u> Copyright 2020 by Yağmur Doğan </u></i></b>
+	</footer>
+<br/><br/><br/>
+
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+</body> 
+</meta>
+</html>
